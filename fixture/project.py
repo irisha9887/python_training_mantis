@@ -34,7 +34,8 @@ class ProjectHelper:
         wd.find_element_by_xpath("//input[@value='Create New Project']").click()
         self.fill_project_name_field(project)
         self.fill_status_field(project)
-        wd.find_element_by_name("inherit_global").click()
+        if (project.inherit_global):
+            wd.find_element_by_name("inherit_global").click()
         self.fill_view_status_field(project)
         self.fill_description_field(project)
         wd.find_element_by_xpath("//input[@value='Add Project']").click()
@@ -44,7 +45,6 @@ class ProjectHelper:
         wd.find_element_by_link_text("Manage").click()
         wd.find_element_by_link_text("Manage Projects").click()
         self.select_project_by_id(id)
-        #wd.find_element_by_xpath("//a[contains(@href, 'manage_proj_edit_page.php?project_id=1')]").click()
         wd.find_element_by_xpath("//input[@value='Delete Project']").click()
         wd.find_element_by_xpath("//input[@value='Delete Project']").click()
 

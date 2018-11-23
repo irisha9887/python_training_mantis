@@ -28,8 +28,22 @@ def random_strings(prefix, maxlen):
     return prefix + "".join([random.choice(symbols) for i in range(random.randrange(maxlen))])
 
 
-testdata = [Project(name=random_strings("name", 10), status="stable", view_state="private",
-                    description=random_strings("description", 30))
+def random_boolean():
+    return random.choice([False, True])
+
+
+def random_status():
+    list = ['development', 'release', 'stable', 'obsolete']
+    return random.choice(list)
+
+
+def random_view_status():
+    list = ['public', 'private']
+    return random.choice(list)
+
+
+testdata = [Project(name=random_strings("name", 10), status=random_status(), view_state=random_view_status(),
+                    inherit_global=random_boolean(), description=random_strings("description", 30))
     for name in range(n)
 ]
 
