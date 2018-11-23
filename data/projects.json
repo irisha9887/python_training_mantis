@@ -1,37 +1,19 @@
 [
   {
     "py/object": "model.project.Project",
-    "description": "",
+    "description": "descriptionX 7hCk1 Kgw7",
     "id": null,
     "inherit_global": null,
-    "name": "",
-    "status": "development",
-    "view_state": "public"
-  },
-  {
-    "py/object": "model.project.Project",
-    "description": "descriptionVUz ",
-    "id": null,
-    "inherit_global": null,
-    "name": "name Eo10 F",
+    "name": "nameJ  d",
     "status": "stable",
     "view_state": "private"
   },
   {
     "py/object": "model.project.Project",
-    "description": "descriptionhAD RjT I1h7u  ro5H",
+    "description": "description VmAXiP",
     "id": null,
     "inherit_global": null,
-    "name": "name1",
-    "status": "stable",
-    "view_state": "private"
-  },
-  {
-    "py/object": "model.project.Project",
-    "description": "descriptionk8x",
-    "id": null,
-    "inherit_global": null,
-    "name": "nameo 1Jjs",
+    "name": "nameT gdtKz6",
     "status": "stable",
     "view_state": "private"
   }

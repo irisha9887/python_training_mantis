@@ -38,3 +38,19 @@ class ProjectHelper:
         self.fill_view_status_field(project)
         self.fill_description_field(project)
         wd.find_element_by_xpath("//input[@value='Add Project']").click()
+
+    def delete_project_by_id(self,id):
+        wd = self.app.wd
+        wd.find_element_by_link_text("Manage").click()
+        wd.find_element_by_link_text("Manage Projects").click()
+        self.select_project_by_id(id)
+        #wd.find_element_by_xpath("//a[contains(@href, 'manage_proj_edit_page.php?project_id=1')]").click()
+        wd.find_element_by_xpath("//input[@value='Delete Project']").click()
+        wd.find_element_by_xpath("//input[@value='Delete Project']").click()
+
+    def select_project_by_id(self, id):
+        wd = self.app.wd
+        wd.find_element_by_css_selector("a[href='manage_proj_edit_page.php?project_id=%s']" % id).click()
+
+
+

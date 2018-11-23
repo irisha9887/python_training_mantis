@@ -13,7 +13,7 @@ except getopt.GetoptError as err:
     getopt.usage()
     sys.exit(2)
 
-n = 3
+n = 2
 f = "data/projects.json"
 
 for o, a in opts:
@@ -28,8 +28,8 @@ def random_strings(prefix, maxlen):
     return prefix + "".join([random.choice(symbols) for i in range(random.randrange(maxlen))])
 
 
-testdata = [Project(name="", status="development", view_state="public", description="")] + [
-   Project(name=random_strings("name", 10), status="stable", view_state="private", description=random_strings("description", 30))
+testdata = [Project(name=random_strings("name", 10), status="stable", view_state="private",
+                    description=random_strings("description", 30))
     for name in range(n)
 ]
 
