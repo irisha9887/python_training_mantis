@@ -1,20 +1,20 @@
 [
   {
     "py/object": "model.project.Project",
-    "description": "descriptionywEIpBuAfU X4 H e336  n t",
+    "description": "descriptiongfxP KQy",
     "id": null,
     "inherit_global": true,
-    "name": "name",
-    "status": "obsolete",
+    "name": "nameG 9jO2kM",
+    "status": "development",
     "view_state": "private"
   },
   {
     "py/object": "model.project.Project",
-    "description": "descriptionrCbnJ VvK a gSQPRme",
+    "description": "description lDzxW7lGgQya A6 H",
     "id": null,
-    "inherit_global": false,
-    "name": "nameN9v",
-    "status": "obsolete",
-    "view_state": "private"
+    "inherit_global": true,
+    "name": "name ",
+    "status": "release",
+    "view_state": "public"
   }
 ]
